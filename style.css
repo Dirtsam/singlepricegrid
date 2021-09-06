@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+p {
+  color: hsl(204, 43%, 93%);
+  font-size: 15px;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  background-color: hsl(204, 43%, 93%);
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  width: min(90%, 340px);
+  background: #fff;
+  margin: 120px 0;
+  border-radius: 5px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    0 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.row {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+}
+
+/* mobile column */
+.column {
+  padding: 30px 20px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: min(90%, 600px);
+    margin: auto;
+    border-radius: 5px;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  .column {
+    padding: 40px 40px;
+  }
+
+  .header {
+    /* grid-column: 1/-1; */
+    grid-column: span 2;
+  }
+
+  .header h2 {
+    margin: 20px 0 15px;
+
+    font-weight: 700;
+  }
+
+  .subs-contain p {
+    font-size: 14px;
+  }
+  .about-container p {
+    margin: 5px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+.title {
+  color: hsl(179, 62%, 43%);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.header h2 {
+  color: hsl(71, 73%, 54%);
+  font-size: 1rem;
+  margin: 30px 0 20px;
+}
+
+.header p {
+  font-size: 15px;
+  line-height: 24px;
+  color: hsl(218, 22%, 67%);
+}
+
+h2 {
+  color: #fff;
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+.price {
+  font-family: "Karla", sans-serif;
+  color: #fff;
+  font-size: 1.5rem;
+}
+.price span {
+  font-size: 14px;
+  color: hsl(204, 43%, 93%);
+  font-weight: 400;
+}
+.subs-contain {
+  background-color: hsl(179, 62%, 43%);
+}
+
+.about-container {
+  background-color: hsla(179, 62%, 43%, 0.8);
+}
+
+button {
+  width: 100%;
+  margin: auto;
+  padding: 1em;
+  cursor: pointer;
+  background: hsl(71, 73%, 54%);
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  margin-top: 30px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    0 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #fff;
+}
